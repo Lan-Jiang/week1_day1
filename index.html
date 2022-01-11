@@ -5,9 +5,45 @@
     <!-- Embed Stype Method-->
     <style>
         header {
-            background: url(images/cliff_ocean.jpg);
+            background: url(images/cliff_ocean.jpg) 0 -200px no-repeat;
+            background-size: 1500px;
             height: 400px;
-            background-repeat: no-repeat;
+            /*background-repeat: no-repeat;*/
+            padding-top: 50px;
+            padding-left: 50px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif; /* sans-serif is default in all computers */
+
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+            padding: 0 20px;
+        }
+        li a {
+            text-decoration: none; /* When a added, default is link, so to remove it */
+        }
+        /* Pesudo Class - to style text links */
+        li a:link {
+            color:#000; /* Before click */
+        }
+        li a:visited {
+            color:#818db3; /* After click */
+        }
+        li a:hover {
+            color:#333; /* Mouse over */
+        }
+        li a:active {
+            color:#753a30; /* Mouse down */
+        }
+        nav#topnav {
+            background-color: rgb(255, 245, 238);
+            height: 50px;
+            text-align: center;
+            padding-top: 2px;
+        }
+        nav#topnav a{
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
@@ -16,13 +52,13 @@
 <!-- container to wrap -->
 <div id="container">
 <!-- brand of website -->
-<header>My Web Site Brand</header>
+<header style="font-size:60px; color:#fff;">My Web Site Brand</header>
 <!-- main navigation -->
-<nav>
+<nav id="topnav">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="page2.html">About</a></li>
-        <li>Gallery</li>
+        <li><a>Gallery</a></li>
         <li><a href="page3.html">Contact</a></li>
     </ul>
 </nav> <!-- end main navigation -->
