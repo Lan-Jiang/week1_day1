@@ -1,56 +1,103 @@
-/* */
+/* External CSS style */
 header {
-background: url(images/cliff_ocean.jpg) 0 -200px no-repeat;
-background-size: 1500px;
-height: 400px;
-/*background-repeat: no-repeat;*/
-padding-top: 50px;
-padding-left: 50px;
-font-weight: bold;
-font-family: Arial, Helvetica, sans-serif; /* sans-serif is default in all computers */
+    background: url(images/cliff_ocean.jpg) 0 -200px no-repeat;
+    background-size: 1500px;
+    height: 400px;
+    /*background-repeat: no-repeat;*/
+    padding-top: 50px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; /* sans-serif is default in all computers */
 
 }
 li {
-list-style-type: none;
-display: inline;
-padding: 0 20px;
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
 }
 li a {
-text-decoration: none; /* When a added, default is link, so to remove it */
+    text-decoration: none; /* When a added, default is link, so to remove it */
 }
 /* Pesudo Class - to style text links */
 li a:link {
-color:#000; /* Before click */
+    color:#000; /* Before click */
 }
 li a:visited {
-color:#818db3; /* After click */
+    color:#818db3; /* After click */
 }
 li a:hover {
-color:#333; /* Mouse over */
+    color:#333; /* Mouse over */
 }
 li a:active {
-color:#753a30; /* Mouse down */
+    color:#753a30; /* Mouse down */
 }
 nav#topnav {
-background-color: rgba(255, 245, 238, 0.8); /* a stand for the last digit is for opacity */
-height: 50px;
-text-align: center;
-padding-top: 2px;
+    background-color: rgba(255, 245, 238, 0.8); /* a stand for the last digit is for opacity */
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
 }
 nav#topnav a{
-font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/*main {
-height: 400px;
-}*/
+main {
+    margin: 50px; /* when backgroun is white, otherwise can use padding */
+}
 main h1{
-color:rgb(129,141,179);
-font-family: Arial, Helvetica, sans-serif;
+    color:rgb(129,141,179);
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer {
-height: 40px;
-background-color: rgb(129,141,179);
-text-align: center;
-padding-top: 20px;
-color: rgb(211,218,240);
+    height: 40px;
+    background-color: rgb(129,141,179);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(211,218,240);
 }
+
+/* Page 2 */
+table {
+    margin-top: 35px;
+}
+table, caption, th, td { /* with comma, called multiple selector */
+    border: 1px solid #000; /* value's order doesn't matter */
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: 800px;
+    height: 40px;
+    padding-top: 15px;
+    color: #753a30;
+}
+
+/* Page 3 */
+label {
+    display: block;
+    margin: 15px 0 0 0;
+}
+input {
+    width: 300px;
+}
+input[type="radio"] {
+    width: 25px;
+}
+textarea {
+    width: 300px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100px;
+}
+
+
+
+
+
+
+
