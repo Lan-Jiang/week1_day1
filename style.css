@@ -95,6 +95,9 @@ input[type="submit"] {
     width: 100px;
 }
 
+main #album #photo img {
+    width: 400px;
+}
 
 
 
